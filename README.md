@@ -1,5 +1,17 @@
 # bytesReadSample
+
 Arduino and oF's byteIO sample
+
+# Usage
+
+bytesSendTo.ino をArduinoに書き込み、oFのプロジェクトを実行すると、ino側で指定された値がA,B,C,Dなどの添字とともにoF側に送られます。なので、ino側でPinから取得した値を適当な添字とともにsendすれば、oF側で読み取れます。
+
+# Notice
+
+シリアル通信のデータ転送レートの関係でArduinoから送られる値を固定しても、値が揺れる模様。  
+例えば、500を常に送るようにしても、0, 500, 0, 500 のような感じでぶれます。
+
+
 
 # Arduino
 
